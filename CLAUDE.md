@@ -662,3 +662,17 @@ git push origin main --tags
 **Last Updated:** November 19, 2025
 **Repository Version:** 1.3.3 (253 plugins, 185 with Agent Skills)
 **Status:** Active, accepting community contributions
+
+---
+
+## Portfolio Context
+
+This repo is part of an 18-repo portfolio coordinated from the `=notes` vault.
+
+- **Role**: Plugin marketplace fork providing 253+ plugins to all Claude Code sessions
+- **Coordination**: See `=notes/REPOSITORY-MAP.md` for full dependency graph
+- **Relationships**:
+  - Plugins used by → all repos in the portfolio via Claude Code plugin system
+  - Complements → `superpowers` skills framework (`/Users/jack.reis/Documents/superpowers/`)
+  - Coordinated from → `=notes` vault (`/Users/jack.reis/Documents/=notes/`)
+  - Automated by → `tonkotsu-automation` (`/Users/jack.reis/Documents/tonkotsu-automation/`)
