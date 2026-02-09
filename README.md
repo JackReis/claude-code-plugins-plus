@@ -4,7 +4,6 @@
 [![Plugins](https://img.shields.io/badge/plugins-254-blue)](https://github.com/jeremylongshore/claude-code-plugins)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-185%20plugins-orange?logo=sparkles)](CHANGELOG.md)
 [![2025 Schema](https://img.shields.io/badge/2025%20Schema-100%25%20Compliant-success?logo=checkmarx)](SKILLS_SCHEMA_2025.md)
-[![NEW](https://img.shields.io/badge/NEW-Tool%20Permissions-blueviolet?logo=shield)](SKILL_ACTIVATION_GUIDE.md)
 [![GitHub Stars](https://img.shields.io/github/stars/jeremylongshore/claude-code-plugins?style=social)](https://github.com/jeremylongshore/claude-code-plugins)
 
 **254 production-ready Claude Code plugins for automation, development, and AI workflows.**
@@ -150,7 +149,7 @@ The new [Excel Analyst Pro](plugins/business-tools/excel-analyst-pro/) plugin br
 
 ### 🎯 Agent Context Manager Plugin
 
-**NEW**: Automatic AGENTS.md detection and loading alongside CLAUDE.md
+Automatic AGENTS.md detection and loading alongside CLAUDE.md
 
 - **Plugin**: [agent-context-manager](plugins/productivity/agent-context-manager/)
 - **Category**: Productivity
@@ -432,7 +431,7 @@ Skill activates → Generates playbook → Ready to deploy
 ---
 
 ### Skills Powerkit - First Agent Skills Plugin
-**NEW:** The first plugin using Anthropic's Agent Skills feature (launched Oct 16, 2025). Say "create a plugin" or "validate this plugin" and Claude automatically uses these model-invoked capabilities:
+The first plugin using Anthropic's Agent Skills feature (launched Oct 16, 2025). Say "create a plugin" or "validate this plugin" and Claude automatically uses these model-invoked capabilities:
 - 🛠️ Plugin Creator - Auto-scaffolds plugins
 - ✅ Plugin Validator - Auto-validates structure
 - 📦 Marketplace Manager - Auto-manages catalog
@@ -444,7 +443,7 @@ Skill activates → Generates playbook → Ready to deploy
 ```
 
 ### Skill Enhancers - Automation for Claude's Skills
-**NEW CATEGORY:** Plugins that extend Claude's built-in Skills (web_search, web_fetch) with automation. Claude searches → Plugin acts.
+Plugins that extend Claude's built-in Skills (web_search, web_fetch) with automation. Claude searches -> Plugin acts.
 
 Example: `web-to-github-issue` - Research → GitHub tickets
 
@@ -470,13 +469,13 @@ This marketplace contains **three types of extensions** that work differently:
 - **Count**: 5 plugins (21 MCP tools total)
 - **Actual compiled code** - 13-26KB of executable JavaScript per plugin
 
-### 3. Agent Skills 🆕 (< 1% of marketplace)
+### 3. Agent Skills (< 1% of marketplace)
 - **What they are**: Model-invoked capabilities Claude automatically uses when relevant
 - **How they work**: Claude decides when to activate based on conversation context
 - **Example**: Skills Powerkit (5 skills: plugin creator, validator, manager, auditor, version bumper)
 - **Count**: 1 plugin
 - **Invocation**: Automatic - you say "create a plugin" and Claude uses the skill
-- **NEW**: Launched October 16, 2025 by Anthropic
+- **Launched**: October 16, 2025 by Anthropic
 
 **Skills vs Commands:** Commands require explicit `/command` trigger. Skills activate automatically based on what you're asking for.
 
@@ -1047,4 +1046,4 @@ Made with dedication by the Claude Code community
 
 ---
 
-**Status**: Public Beta | **Version**: 1.3.0 | **Last Updated**: November 8, 2025
+**Status**: Public Beta | **Version**: 1.4.0 | **Last Updated**: February 9, 2026
