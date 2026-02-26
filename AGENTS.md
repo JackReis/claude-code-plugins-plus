@@ -116,3 +116,6 @@ python3 scripts/validate-skills-schema.py
 ---
 
 **Note:** All 185 Agent Skills follow the 2025 schema standard for consistent quality and security.
+
+## Repository Remote Policy
+- Repo policy: GitHub is primary `origin` and CI/CD source; GitLab is backup remote (`gitlab`) with GitLab CI disabled.
