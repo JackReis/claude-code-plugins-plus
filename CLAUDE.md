@@ -700,3 +700,10 @@ This repo is part of an 18-repo portfolio coordinated from the `=notes` vault.
 - Any capability change must include usage docs/examples.
 - Keep plugin/skill APIs stable where possible; note breaking changes explicitly.
 - Preserve provider-agnostic interfaces and adapter boundaries.
+
+## Local Overrides — Command Truth
+- Install deps: `pnpm install`
+- Dev: `pnpm run dev`
+- Build: `pnpm run build`
+- Lint/typecheck/test: `pnpm run lint && pnpm run typecheck && pnpm run test`
+- Marketplace sync: `pnpm run sync-marketplace`
