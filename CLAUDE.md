@@ -1,3 +1,19 @@
+## Inheritance Model (Folder-First)
+
+This repository inherits operational policy from:
+- Global baseline: `/Users/jack.reis/Documents/=notes/CLAUDE.md`
+- Domain contract: `/Users/jack.reis/Documents/=notes/claude/contracts/DOMAIN-PLUGINS-AGENTS.md`
+
+### Default complex-task behavior
+- Plan first using `superpowers:writing-plans`
+- Use `openclaw-sync` when orchestration/state is involved
+- Execute with `superpowers:executing-plans`
+
+### Local overrides
+Keep only repo-specific build/test/deploy details below.
+
+---
+
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
@@ -679,3 +695,8 @@ This repo is part of an 18-repo portfolio coordinated from the `=notes` vault.
 
 ## Repository Remote Policy
 - Repo policy: GitHub is primary `origin` and CI/CD source; GitLab is backup remote (`gitlab`) with GitLab CI disabled.
+
+## Local Overrides
+- Any capability change must include usage docs/examples.
+- Keep plugin/skill APIs stable where possible; note breaking changes explicitly.
+- Preserve provider-agnostic interfaces and adapter boundaries.
