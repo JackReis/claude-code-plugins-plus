@@ -1,0 +1,22 @@
+{
+  "name": "autonomous-ai-agents",
+  "version": "0.1.0",
+  "description": "Fleet-identity lookup for Jack's autonomous AI agents. Maps intent names (Hermes, Zolivier, KimiClaw) to their Discord/Telegram surfaces (Wings, Zoe, Mara, Kopi) by reading the canonical mapping at ~/Documents/Coordination/ — no duplicated data. v0.1 ships one skill (fleet-identity); v0.2 will add Hermes MCP integration via a separate superplan.",
+  "author": {
+    "name": "Jack Reis",
+    "email": "jackareis@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "fleet",
+    "identity",
+    "agents",
+    "hermes",
+    "zolivier",
+    "kimiclaw",
+    "openclaw",
+    "discord",
+    "telegram",
+    "coordination"
+  ]
+}

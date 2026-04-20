@@ -2998,6 +2998,29 @@
       }
     },
     {
+      "name": "autonomous-ai-agents",
+      "source": "./plugins/ai-agency/autonomous-ai-agents",
+      "description": "Fleet-identity lookup for Jack's autonomous AI agent fleet. Maps intent names (Hermes, Zolivier, KimiClaw) to Discord/Telegram surfaces (Wings, Zoe, Mara, Kopi) by reading the canonical mapping at ~/Documents/Coordination/ without duplicating data. v0.2 will add Hermes MCP integration.",
+      "version": "0.1.0",
+      "category": "ai-agency",
+      "keywords": [
+        "fleet",
+        "identity",
+        "agents",
+        "hermes",
+        "zolivier",
+        "kimiclaw",
+        "openclaw",
+        "discord",
+        "telegram",
+        "coordination"
+      ],
+      "author": {
+        "name": "Jack Reis",
+        "email": "jackareis@gmail.com"
+      }
+    },
+    {
       "name": "network-latency-analyzer",
       "source": "./plugins/performance/network-latency-analyzer",
       "description": "Analyze network latency and optimize request patterns",
