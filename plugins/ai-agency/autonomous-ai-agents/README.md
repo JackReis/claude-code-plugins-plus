@@ -16,10 +16,10 @@ Runtime agents vs. platform surfaces: Hermes and Zolivier are local runtimes (He
 
 ## Install
 
-From the `claude-code-plugins-plus` marketplace (Jack's fork):
+From the `jack-plugins` marketplace (Jack's fork of claude-code-plugins-plus, registered as a distinct marketplace to avoid name collision with Jeremy Longshore's upstream):
 
 ```
-/plugin install autonomous-ai-agents@claude-code-plugins-plus
+/plugin install autonomous-ai-agents@jack-plugins
 ```
 
 Or load from a local path during development:
@@ -27,6 +27,8 @@ Or load from a local path during development:
 ```
 /plugin install path:/Users/jack.reis/Documents/claude-code-plugins-plus/plugins/ai-agency/autonomous-ai-agents
 ```
+
+The `jack-plugins` marketplace is registered in `~/.claude/settings.json` under `extraKnownMarketplaces` and points at `github:JackReis/claude-code-plugins-plus`.
 
 ## Usage
 
