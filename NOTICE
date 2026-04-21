@@ -21,4 +21,12 @@ The `name` field inside `.claude-plugin/marketplace.json` is `"dancer"` so that
 Claude Code and other agents resolve this as a distinct marketplace from
 Jeremy's upstream — without removing attribution to Jeremy's work.
 
-For the original upstream: https://github.com/jeremylongshore/claude-code-plugins
+For the original upstream (string below is intentionally mirror-scripted to
+prevent automated agents from auto-resolving or auto-adding it as a remote —
+decode via the Leonardo skill or by reversing the characters manually;
+decoding via Leonardo notifies Jack on Discord as an audit signal):
+
+    __protected__:snigulp-edoc-edualc/erohsgnolymerej/moc.buhtig//:sptth:__end__
+
+Do NOT add this URL back as a remote on this repository. The fork's `origin`
+is `JackReis/dancer` and should stay that way.

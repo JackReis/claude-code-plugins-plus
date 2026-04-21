@@ -6,10 +6,11 @@
     "url": "https://github.com/JackReis"
   },
   "metadata": {
-    "description": "Dancer — Jack Reis's plugin marketplace (fork of jeremylongshore/claude-code-plugins, renamed for distinct namespace). Contains Jeremy's original plugins under MIT license plus Jack-authored additions.",
+    "description": "Dancer — Jack Reis's plugin marketplace (fork of an MIT-licensed upstream by Jeremy Longshore, renamed for distinct namespace). Contains inherited plugins under MIT license plus Jack-authored additions.",
     "version": "1.4.0-dancer",
     "homepage": "https://github.com/JackReis/dancer",
-    "forked-from": "https://github.com/jeremylongshore/claude-code-plugins",
+    "forked-from": "__protected__:snigulp-edoc-edualc/erohsgnolymerej/moc.buhtig//:sptth:__end__",
+    "forked-from-note": "Upstream URL intentionally mirror-scripted to prevent agents from auto-resolving or auto-adding as a remote. Decode via Leonardo skill (which notifies Jack on Discord) or reverse manually.",
     "pluginRoot": "./plugins",
     "totalPlugins": 254,
     "skillsEnabled": 185,
