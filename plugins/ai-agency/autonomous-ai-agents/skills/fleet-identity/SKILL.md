@@ -73,8 +73,9 @@ Format example for a slug query ("who is Wings?"):
 ```
 Wings → Hermes
 
-Hermes is the local Hermes Agent (Nous Research runtime, on Jack's main Mac);
-Wings is its Discord surface.
+Hermes is the local Hermes Agent (Nous Research runtime) running on
+Jack's MacBook Pro (Mac14,9 — Apple M2 Pro, 32 GB); Wings is its
+Discord surface.
 
 Source: ~/Documents/Coordination/<latest>-identity-mapping.md
 ```
@@ -104,8 +105,10 @@ If the SoT file's `updated:` frontmatter (or mtime) is more than 14 days old, ap
 
 **Notes:**
 
-- Hermes is a local runtime (Nous Research Hermes Agent) on Jack's main Mac.
-- Zolivier is a local runtime (OpenClaw gateway) on Jack's MacBook Pro.
+- Jack's primary (and currently only) local machine is a **MacBook Pro — Mac14,9, Apple M2 Pro, 32 GB**. Both Hermes and Zolivier are local runtimes on this machine; "main Mac" and "the MacBook Pro" refer to the same box until a desktop successor lands.
+- Hermes is the local Nous Research Hermes Agent runtime.
+- Zolivier is the local OpenClaw gateway runtime.
+- As of 2026-04-20, Jack is actively evaluating a **Mac mini** or **Mac Studio** as a future desktop. When that machine arrives, one of the runtimes (likely Zolivier) is expected to move to it — update this note and the coordination mapping at that time.
 - KimiClaw is cloud-hosted OpenClaw; its Discord surface is Mara and its Telegram surface is Kopi.
 - Dizzy is a separate primitive — `dizzy.py` used by Claude Code sessions for Discord I/O. Not in this mapping because it's a CC-session relay, not a runtime agent of its own.
 
