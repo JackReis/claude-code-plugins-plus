@@ -3020,19 +3020,26 @@
     {
       "name": "autonomous-ai-agents",
       "source": "./plugins/ai-agency/autonomous-ai-agents",
-      "description": "Fleet-identity lookup for Jack's autonomous AI agent fleet. Maps intent names (Hermes, Zolivier, KimiClaw) to Discord/Telegram surfaces (Wings, Zoe, Mara, Kopi) by reading the canonical mapping at ~/Documents/Coordination/ without duplicating data. v0.2 will add Hermes MCP integration.",
-      "version": "0.1.0",
+      "description": "Fleet-coordination plugin. v0.1 shipped fleet-identity skill (who runs Wings/Zoe/Mara/Kopi). v0.2 ships the Hermes messaging bridge via native 'hermes mcp serve' (10 tools across Telegram/Discord/Slack/WhatsApp/Signal/Matrix) + hermes-bridge companion skill. Wings (Hermes) + Zoe (Zolivier) are the fleet's shared async-messaging substrate for heads-down thinkers (Claude, Gemini, ChatGPT).",
+      "version": "0.2.0",
       "category": "ai-agency",
       "keywords": [
         "fleet",
         "identity",
         "agents",
         "hermes",
+        "wings",
         "zolivier",
         "kimiclaw",
         "openclaw",
         "discord",
         "telegram",
+        "slack",
+        "whatsapp",
+        "signal",
+        "matrix",
+        "mcp",
+        "messaging",
         "coordination"
       ],
       "author": {
