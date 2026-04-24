@@ -82,6 +82,34 @@ class DecodeFilenameTests(unittest.TestCase):
         self.assertEqual(leonardo.decode_filename("terces.md"), "secret.md")
 
 
+class MultiLineDecodeTests(unittest.TestCase):
+    """Regression tests for 2026-04-23 DOTALL bug.
+
+    Before the fix, SENTINEL_RE lacked re.DOTALL, so payloads containing
+    newlines (every markdown-wrapped sentinel in the wild) made findall
+    return [] — decode silently fell through to the full-input reverse
+    branch. Shipping the fix without these tests would let the bug reland.
+    """
+
+    def test_decode_multiline_payload(self):
+        original = "# Header\n\nBody with **markdown**.\n\nAnother paragraph."
+        encoded = f"__protected__:{original[::-1]}:__end__"
+        matches = leonardo.SENTINEL_RE.findall(encoded)
+        self.assertEqual(len(matches), 1, "regex should match multi-line payload")
+        self.assertEqual(leonardo.decode_string(matches[0]), original)
+
+    def test_decode_multiline_wrapped_in_outer_text(self):
+        """Sentinel surrounded by frontmatter + markdown preamble."""
+        original = "secret content\nwith newlines\nand # markdown"
+        wrapper = (
+            f"---\ntitle: test\n---\n\n> intro\n\n"
+            f"__protected__:{original[::-1]}:__end__\n"
+        )
+        matches = leonardo.SENTINEL_RE.findall(wrapper)
+        self.assertEqual(len(matches), 1)
+        self.assertEqual(leonardo.decode_string(matches[0]), original)
+
+
 class TattleDispatchTests(unittest.TestCase):
     """Verify tattle_to_discord fires exactly once per encode/decode invocation in main()."""
 
