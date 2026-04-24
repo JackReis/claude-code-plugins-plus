@@ -16,7 +16,7 @@ from pathlib import Path
 # --- Configuration ---
 DISCORD_CHANNEL_ID = "1493133989303681064"  # #bots
 VAULT_ROOT = Path("/Users/jack.reis/Documents/=notes")
-SENTINEL_RE = r"__protected__:(.*?):__end__"
+SENTINEL_RE = re.compile(r"__protected__:(.*?):__end__", re.DOTALL)
 
 # Leading human-readable date token: ISO-8601-style YYYY-MM-DD, optionally with time.
 # Group 1 = date/time, group 2 = whitespace separator, group 3 = remainder to protect.
@@ -157,7 +157,7 @@ def main():
         )
         return
 
-    matches = re.findall(SENTINEL_RE, args.input)
+    matches = SENTINEL_RE.findall(args.input)
     if not matches:
         decoded = decode_string(args.input)
         print(decoded)
