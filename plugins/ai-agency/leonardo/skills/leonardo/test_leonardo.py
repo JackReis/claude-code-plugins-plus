@@ -214,8 +214,13 @@ class FallbackAuditTests(_IsolatedState, unittest.TestCase):
         self.assertIn("tattle=failed", content)
 
 
-class TattleDispatchTests(unittest.TestCase):
-    """Verify tattle_to_discord fires exactly once per encode/decode invocation in main()."""
+class TattleDispatchTests(_IsolatedState, unittest.TestCase):
+    """Verify tattle_to_discord fires exactly once per encode/decode invocation in main().
+
+    Uses _IsolatedState so the rate-limit + dedupe gates wired into main() don't
+    suppress mocked tattles based on leftover state from a prior `python3 -m
+    unittest` run polluting ~/.claude/leonardo-*.json.
+    """
 
     def _run_main(self, argv):
         mock_run = MagicMock(return_value=MagicMock(returncode=0))
